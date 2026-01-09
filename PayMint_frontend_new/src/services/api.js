@@ -70,6 +70,7 @@ export const userApi = {
     }
   },
   logout() {
+    window.location.href = '/';
     localStorage.removeItem("fintech_current_user");
   },
   getCurrentUser() {

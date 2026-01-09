@@ -71,6 +71,7 @@ export const userApi = {
   },
   logout() {
     localStorage.removeItem("fintech_current_user");
+
     window.location.href = '/';
   },
   getCurrentUser() {

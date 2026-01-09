@@ -24,7 +24,7 @@ export function ConfirmTransferModal({
   const formatAmount = (value) => {
     return new Intl.NumberFormat("en-US", {
       style: "currency",
-      currency: "USD",
+      currency: "INR",
       minimumFractionDigits: 2,
     }).format(value);
   };

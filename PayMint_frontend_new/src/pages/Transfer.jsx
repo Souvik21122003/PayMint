@@ -10,7 +10,7 @@ import { ConfirmTransferModal } from "../components/ConfirmModal";
 import { useToast } from "../hooks/use-toast";
 import { appConfig } from "../config/appConfig";
 import {
-  DollarSign,
+  IndianRupee,
   ArrowLeft,
   Send,
   Users,
@@ -80,7 +80,7 @@ export function Transfer() {
     }
     if (numAmount < appConfig.minTransactionAmount) {
       toast({
-        title: `Minimum amount is $${appConfig.minTransactionAmount}`,
+        title: `Minimum amount is ₹${appConfig.minTransactionAmount}`,
         variant: "destructive",
       });
       return;
@@ -219,7 +219,7 @@ export function Transfer() {
               Amount
             </Label>
             <div className="relative">
-              <DollarSign className="absolute left-4 top-1/2 -translate-y-1/2 w-6 h-6 text-muted-foreground" />
+              <IndianRupee className="absolute left-4 top-1/2 -translate-y-1/2 w-6 h-6 text-muted-foreground" />
               <Input
                 id="amount"
                 type="text"

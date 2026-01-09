@@ -58,7 +58,7 @@ export function Signup() {
       await signup(email.trim().toLowerCase(), password, name.trim());
       toast({
         title: "Account created!",
-        description: `Welcome to FinWallet! You've received $${appConfig.initialBalance} as a welcome bonus.`
+        description: `Welcome to FinWallet! You've received ₹${appConfig.initialBalance} as a welcome bonus.`
       });
       navigate("/dashboard");
     } catch (error) {
@@ -100,7 +100,7 @@ export function Signup() {
             Start your financial journey today
           </h1>
           <p className="text-lg text-primary-foreground/70 max-w-md mb-8">
-            Create an account and get ${appConfig.initialBalance} welcome bonus to explore our features.
+            Create an account and get ₹${appConfig.initialBalance} welcome bonus to explore our features.
           </p>
           <div className="space-y-4">
             {features.map((feature, index) => (

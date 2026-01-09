@@ -8,7 +8,7 @@ import { Label } from "../components/ui/label";
 import { useToast } from "../hooks/use-toast";
 import { appConfig } from "../config/appConfig";
 import {
-  DollarSign,
+  IndianRupee,
   ArrowLeft,
   Check,
   Loader2,
@@ -28,7 +28,7 @@ export function AddMoney() {
   const formatBalance = (value) => {
     return new Intl.NumberFormat("en-US", {
       style: "currency",
-      currency: "USD",
+      currency: "INR",
       minimumFractionDigits: 2,
     }).format(value);
   };
@@ -53,7 +53,7 @@ export function AddMoney() {
     }
     if (numAmount < appConfig.minTransactionAmount) {
       toast({
-        title: `Minimum amount is $${appConfig.minTransactionAmount}`,
+        title: `Minimum amount is ₹${appConfig.minTransactionAmount}`,
         variant: "destructive",
       });
       return;
@@ -124,7 +124,7 @@ export function AddMoney() {
               Amount
             </Label>
             <div className="relative">
-              <DollarSign className="absolute left-4 top-1/2 -translate-y-1/2 w-6 h-6 text-muted-foreground" />
+              <IndianRupee className="absolute left-4 top-1/2 -translate-y-1/2 w-6 h-6 text-muted-foreground" />
               <Input
                 id="amount"
                 type="text"
@@ -137,7 +137,7 @@ export function AddMoney() {
               />
             </div>
             <p className="text-sm text-muted-foreground text-center">
-              Min: ${appConfig.minTransactionAmount} • Max:{" "}
+              Min: ₹${appConfig.minTransactionAmount} • Max:{" "}
               {formatBalance(appConfig.maxTransactionAmount)}
             </p>
           </div>
@@ -156,7 +156,7 @@ export function AddMoney() {
                   disabled={loading}
                   className="h-12"
                 >
-                  ${value}
+                  ₹{value}
                 </Button>
               ))}
             </div>

@@ -98,11 +98,11 @@ export const walletApi = {
   async addMoney(amount) {
     try {
       if (amount < appConfig.minTransactionAmount) {
-        throw new Error(`Minimum amount is $${appConfig.minTransactionAmount}`);
+        throw new Error(`Minimum amount is ₹${appConfig.minTransactionAmount}`);
       }
       if (amount > appConfig.maxTransactionAmount) {
         throw new Error(
-          `Maximum amount is $${appConfig.maxTransactionAmount.toLocaleString()}`
+          `Maximum amount is ₹${appConfig.maxTransactionAmount.toLocaleString()}`
         );
       }
       const current = userApi.getCurrentUser();
@@ -121,11 +121,11 @@ export const walletApi = {
   async transferMoney(recipientId, amount) {
     try {
       if (amount < appConfig.minTransactionAmount) {
-        throw new Error(`Minimum amount is $${appConfig.minTransactionAmount}`);
+        throw new Error(`Minimum amount is ₹${appConfig.minTransactionAmount}`);
       }
       if (amount > appConfig.maxTransactionAmount) {
         throw new Error(
-          `Maximum amount is $${appConfig.maxTransactionAmount.toLocaleString()}`
+          `Maximum amount is ₹${appConfig.maxTransactionAmount.toLocaleString()}`
         );
       }
       const current = userApi.getCurrentUser();

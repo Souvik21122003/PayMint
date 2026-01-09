@@ -1,7 +1,7 @@
 import axios from "axios";
 import { appConfig } from "../config/appConfig";
-import { useNavigate } from "react-router-dom";
-const navigate = useNavigate();
+
+
 const api = axios.create({
   baseURL: appConfig.apiBaseUrl,
   // e.g. "http://localhost:3000/api"
@@ -23,7 +23,7 @@ const handleAxiosError = (err) => {
   if (errorMsg === "Unauthorized") {
     localStorage.removeItem("fintech_current_user");
     setTimeout(() => {
-      navigate("/");
+      window.location.href = '/'
     }, 5e3);
     throw new Error("Session expired. Please login again.");
   }

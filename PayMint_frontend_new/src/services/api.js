@@ -70,12 +70,11 @@ export const userApi = {
     }
   },
   logout() {
-    localStorage.removeItem("fintech_current_user");
     setTimeout(() => {
       window.location.href = '/';
     }, 500);
+    localStorage.removeItem("fintech_current_user");
     return;
-    window.location.href = '/';
   },
   getCurrentUser() {
     const stored = localStorage.getItem("fintech_current_user");

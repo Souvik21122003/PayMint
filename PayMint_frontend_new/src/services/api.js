@@ -72,7 +72,7 @@ export const userApi = {
   logout() {
     setTimeout(() => {
       window.location.href = '/';
-    }, 500);
+    }, 1000);
     localStorage.removeItem("fintech_current_user");
     return;
   },

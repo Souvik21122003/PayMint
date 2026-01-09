@@ -10,7 +10,7 @@ const app = express();
 // Global middlewares
 app.use(
   cors({
-    origin: "https://pay-mint-one.vercel.app/",
+    origin: "https://pay-mint-one.vercel.app",
     methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
     credentials: true,
   })

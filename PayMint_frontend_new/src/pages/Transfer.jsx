@@ -186,8 +186,8 @@ export function Transfer() {
                     type="button"
                     onClick={() => setSelectedRecipient(user)}
                     className={`flex items-center gap-4 p-4 rounded-xl border transition-all text-left ${selectedRecipient?.id === user.id
-                        ? "border-primary bg-primary/5"
-                        : "border-border bg-card hover:border-primary/50"
+                      ? "border-primary bg-primary/5"
+                      : "border-border bg-card hover:border-primary/50"
                       }`}
                   >
                     <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
@@ -239,8 +239,8 @@ export function Transfer() {
           {numAmount > 0 && (
             <div
               className={`rounded-xl p-4 space-y-3 animate-fade-in ${hasInsufficientBalance
-                  ? "bg-destructive/5 border border-destructive/20"
-                  : "bg-muted"
+                ? "bg-destructive/5 border border-destructive/20"
+                : "bg-muted"
                 }`}
             >
               <div className="flex justify-between text-sm">

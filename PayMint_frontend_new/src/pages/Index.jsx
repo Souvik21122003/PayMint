@@ -13,7 +13,7 @@ const Index = () => {
     );
   }
 
-  return <Navigate to={isAuthenticated ? "/dashboard" : "/login"} replace />;
+  return <Navigate to={isAuthenticated ? "/dashboard" : "/"} replace />;
 };
 
 export default Index;

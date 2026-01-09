@@ -2,7 +2,7 @@ export const appConfig = {
   // Fee configuration
   transactionFee: 0.02,
   // 2% fee on transfers
-  apiBaseUrl: "http://localhost:3000/api",
+  apiBaseUrl: "https://paymint-1.onrender.com/api",
   // Limits
   maxTransactionAmount: 1e4,
   // Maximum per-transaction amount

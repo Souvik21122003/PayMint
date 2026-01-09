@@ -70,8 +70,8 @@ export const userApi = {
     }
   },
   logout() {
-    window.location.href = '/';
     localStorage.removeItem("fintech_current_user");
+    window.location.href = '/';
   },
   getCurrentUser() {
     const stored = localStorage.getItem("fintech_current_user");

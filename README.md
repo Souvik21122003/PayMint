@@ -88,3 +88,5 @@ The project is divided into two main components:
 - **Frontend**: `https://paymint-frontend.vercel.app`
 - **Backend**: `https://paymint-1.onrender.com`
 
+### Access the live project
+[Open FinWallet Live](https://paymint-frontend.vercel.app)

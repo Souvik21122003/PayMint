@@ -137,7 +137,7 @@ export function AddMoney() {
               />
             </div>
             <p className="text-sm text-muted-foreground text-center">
-              Min: ₹${appConfig.minTransactionAmount} • Max:{" "}
+              Min: ₹{appConfig.minTransactionAmount} • Max:{" "}
               {formatBalance(appConfig.maxTransactionAmount)}
             </p>
           </div>

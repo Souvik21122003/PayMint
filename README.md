@@ -89,4 +89,4 @@ The project is divided into two main components:
 - **Backend**: Render
 
 ### Access the live project
-[Open FinWallet Live](https://pay-mint-one.vercel.app/)
+[Open PayMint Live](https://pay-mint-one.vercel.app/)

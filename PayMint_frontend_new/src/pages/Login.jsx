@@ -71,7 +71,7 @@ export function Login() {
               <Wallet className="w-7 h-7 text-primary-foreground" />
             </div>
             <span className="text-3xl font-bold text-primary-foreground">
-              FinWallet
+              PayMint
             </span>
           </div>
           <h1 className="text-4xl xl:text-5xl font-bold text-primary-foreground leading-tight mb-6">
@@ -108,7 +108,7 @@ export function Login() {
             <div className="w-10 h-10 rounded-xl bg-primary flex items-center justify-center">
               <Wallet className="w-5 h-5 text-primary-foreground" />
             </div>
-            <span className="text-xl font-bold text-foreground">FinWallet</span>
+            <span className="text-xl font-bold text-foreground">PayMint</span>
           </div>
           <div className="mb-8">
             <h2 className="text-2xl sm:text-3xl font-bold text-foreground mb-2">

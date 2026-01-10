@@ -40,7 +40,7 @@ export function Layout({ children }) {
               <div className="w-10 h-10 rounded-xl bg-primary flex items-center justify-center">
                 <Wallet className="w-5 h-5 text-primary-foreground" />
               </div>
-              <span className="text-xl font-bold text-foreground">FinWallet</span>
+              <span className="text-xl font-bold text-foreground">PayMint</span>
             </Link>
 
             <nav className="hidden md:flex items-center gap-1">
@@ -52,8 +52,8 @@ export function Layout({ children }) {
                     key={item.path}
                     to={item.path}
                     className={`flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200 ${isActive
-                        ? "bg-primary text-primary-foreground"
-                        : "text-muted-foreground hover:text-foreground hover:bg-muted"
+                      ? "bg-primary text-primary-foreground"
+                      : "text-muted-foreground hover:text-foreground hover:bg-muted"
                       }`}
                   >
                     <Icon className="w-4 h-4" />
@@ -104,8 +104,8 @@ export function Layout({ children }) {
                     to={item.path}
                     onClick={() => setMobileMenuOpen(false)}
                     className={`flex items-center gap-3 px-4 py-3 rounded-lg text-sm font-medium transition-all duration-200 ${isActive
-                        ? "bg-primary text-primary-foreground"
-                        : "text-muted-foreground hover:text-foreground hover:bg-muted"
+                      ? "bg-primary text-primary-foreground"
+                      : "text-muted-foreground hover:text-foreground hover:bg-muted"
                       }`}
                   >
                     <Icon className="w-5 h-5" />

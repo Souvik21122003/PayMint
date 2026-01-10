@@ -86,5 +86,5 @@ The project is divided into two main components:
 
 ### Deployments
 - **Frontend**: `https://paymint-frontend.vercel.app`
-- **Backend**: `https://paymint-1.onrender.com/`
+- **Backend**: `https://paymint-1.onrender.com`
 

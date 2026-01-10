@@ -58,7 +58,7 @@ export function Signup() {
       await signup(email.trim().toLowerCase(), password, name.trim());
       toast({
         title: "Account created!",
-        description: `Welcome to PayMint! You've received ₹${appConfig.initialBalance} as a welcome bonus.`
+        description: `Welcome to PayMint!`
       });
       navigate("/dashboard");
     } catch (error) {

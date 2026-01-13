@@ -71,7 +71,7 @@ export function WalletProvider({ children }) {
     fetchBalance,
     fetchRecentTransactions
   };
-  return /* @__PURE__ */ React.createElement(WalletContext.Provider, { value }, children);
+  return <WalletContext.Provider value={value}>{children}</WalletContext.Provider>;
 }
 export function useWallet() {
   const context = useContext(WalletContext);

@@ -37,7 +37,7 @@ export function AuthProvider({ children }) {
     logout,
     setUser
   };
-  return /* @__PURE__ */ React.createElement(AuthContext.Provider, { value }, children);
+  return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;
 }
 export function useAuth() {
   const context = useContext(AuthContext);

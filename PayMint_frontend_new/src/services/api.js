@@ -36,7 +36,8 @@ export const userApi = {
       const res = await api.get("/users/allUsers", { headers: authHeader() });
       const currentStored = userApi.getCurrentUser();
       const currentUserId = currentStored?.user?.id || currentStored?.id;
-      const filteredUsers = Array.isArray(res.data.users) ? res.data.users.filter((u) => u.id !== currentUserId) : [];
+      const filteredUsers = Array.isArray(res.data.users) ? res.data.users.filter((u) => Number(u.id) !== Number(currentUserId)) : [];
+      console.log(filteredUsers);
       return filteredUsers;
     } catch (err) {
       console.log(err.response.data.error);
